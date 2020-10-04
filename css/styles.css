@@ -1,0 +1,32 @@
+.row-header {
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding:50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: #D1C4E9;;
+    ;
+    margin:0px auto;/* Horizontally center => auto*/
+    padding:20px 0px 20px 0px;
+}
+
+/*Whatever css we are defining is applied in addition to the standard defualt css written by bootstrap*/
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #9575CD;
+    color:floralwhite;
+}
+
+.address {
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
