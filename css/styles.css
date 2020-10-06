@@ -39,3 +39,10 @@ body {
     padding:50px 0px 0px 0px;
     z-index:0;
 }
+
+/*
+This shall not work until bg-primary is not removed in ul class
+*/
+.navbar-dark {
+    background-color: #512DA8;
+}
