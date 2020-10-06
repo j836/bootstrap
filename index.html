@@ -29,22 +29,48 @@
             <!--
                 Not using this will take up entire screen with navbar contents.So to have proper  paddings at both ends we use this container class
             -->
-            <a class="navbar-brand" href="#">Jainy</a>
+            <!--This button will act as toggle button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!--
+                    data-togggle is an js component actually in bootstrap
+                    data-target =>target of button to be as id NAvbar
+                -->
+                <span class="navbar-toggler-icon">
+                    <!--
+                        That three line button=>hamburger Manu
+                    -->
+                </span>
+
+            </button>
+
+            <!-- we want to show and hide these links on clicking the toggle button.So we place them inside a div tag -->
+            <a class="navbar-brand mr-auto" href="#">Jainy</a>
             <!--
                 We can display thr name/logo of the company in navbar-brand
                 #=home page
 
             -->
-            <ul class="navbar-nav mr-auto">
-                <!--
-                    navbar-nav=>helps to set up links in the navbar
-                    mr auto => use right margin as much as possible=> the content will be pushed at left s possible.
-                    nav-iteem => allows to display items as links in horizontal way.
-                -->
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            </ul>
+
+            <div class="collapse navbar-collapse " id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <!--
+                        navbar-nav=>helps to set up links in the navbar
+                        mr auto => use right margin as much as possible=> the content will be pushed at left s possible.
+                        nav-iteem => allows to display items as links in horizontal way.
+                    -->
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <!--
+                        active =>highlights the link
+                    -->
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    
+                </ul>
 
 
+
+            </div>
         </div>   
     </nav>
 
@@ -113,7 +139,7 @@
                     <ul class="list-unstyled">
                         <!-- remove bullets from the links-->
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
