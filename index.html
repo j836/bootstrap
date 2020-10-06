@@ -15,6 +15,39 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <!--
+            navbar=>allows us to create a navbar
+            navbar-dark=?navbar with dark background color
+
+            navbar-expand-sm=>screen size below which togglable navbar comes up.
+            bg-primary =>is the primary color defined in the bootdtrap which is a shade of blue.
+            fixed-top=>Its like position:fixed The navbar shall be visible till the end of the web page.It shall not get scrolled up when the user scrolls down which is the default behaviour..
+            We can us estatic-top or fixed-bottom.
+        -->
+        <div class="container">
+            <!--
+                Not using this will take up entire screen with navbar contents.So to have proper  paddings at both ends we use this container class
+            -->
+            <a class="navbar-brand" href="#">Jainy</a>
+            <!--
+                We can display thr name/logo of the company in navbar-brand
+                #=home page
+
+            -->
+            <ul class="navbar-nav">
+                <!--
+                    navbar-nav=>helps to set up links in the navbar
+                    mr auto => use right margin as much as possible=> the content will be pushed at left s possible.
+                    nav-iteem => allows to display items as links in horizontal way.
+                -->
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            </ul>
+
+
+        </div>   
+    </nav>
+
 
     <header class="jumbotron">
         <div class="container">
