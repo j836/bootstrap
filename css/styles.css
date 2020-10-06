@@ -30,6 +30,12 @@
     margin:0px;
     color:#0f0f0f;
 }
+
+
 /*
-Notice that the navbar is partly covered in the jumbotron.WE shall fix it here.
+Notice that the navbar is partly covered in the jumbotron.WE shall fix it here.So to solve that we give a padding of 50px to the body from the top.
 */
+body {
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
