@@ -98,11 +98,15 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-4 col-sm-3 align-self-center">
                     <!--Here though any content is now written for now,explicitly writing col-12 tells that this dev will be stacked below the above div for xtra small screens and would take up remaining space (remaining = total(12) - 6(taken by above div))for sm and further-->
                     <img src="img/logo.png" alt="Logo" class="img-fluid">
                     <!-- img-fluid => makes it responsive -->
 
+                </div>
+                <!-- Task 3 -->
+                <div class="col-8 col-sm-3 align-self-center" id="reservebuttondiv">
+                    <a href="#reservetable" role="button" class="btn btn-warning" style="width:100%;">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -142,7 +146,7 @@
             </div>
         </div>
 
-
+        <!-- Task 2 -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -151,7 +155,7 @@
                 <div class="media">
                    
                     <div class="media-body ">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-dollar badge-danger">NEW</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                        
                     </div>
@@ -179,6 +183,62 @@
                 
             </div>
         </div>
+                <!-- Task 1 -->
+        <div class="row row-content">
+            <div class="card col-md-6 offset-md-2">
+                <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                <div class="card-body col-12" id="reservetable">
+                    <form method="post">
+                        <div class="form-group row">
+                                <label class="col-md-3 col-12">Number of Guests</label>
+
+                                <div class="col-md-2 col-3">
+                                    <input type="radio" name="guests" value="1" id="g1" required>
+                                    <label for="g1" >1</label>
+                                </div>
+                                <div class="col-md-2 col-3">
+                                    <input type="radio" name="guests" value="2">
+                                    <label for="g2">2</label>
+                                </div>
+                                <div class="col-md-2 col-3">
+                                    <input type="radio" name="guests" value="3">
+                                    <label for="g3">3</label>
+                                </div>
+                                <div class="col-md-2 col-3">
+                                    <input type="radio" name="guests" value="4" >
+                                    <label for="g4">4</label>
+                                </div>
+                                <div class="col-md-2 offset-md-3 col-3">
+                                    <input type="radio" name="guests" value="5">
+                                    <label for="g5">5</label>
+                                </div>
+                                <div class="col-md-2 col-3">
+                                    <input type="radio" name="guests" value="6">
+                                    <label for="g6">6</label>
+                                </div>
+     
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Date and Time</label>
+
+                            <div class="col-md-4 col-6">
+                                <input type="date" placeholder="Date" class="form-control" required>
+                                
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <input type="time" placeholder="Time" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn btn-primary offset-md-3">Reserve</button>
+                        </div>
+                        
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -201,11 +261,11 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
                       HONG KONG<br>
-                      <i class="fa fa-phone fa-lg">
+                      <i class="fa fa-phone ">
                       Tel.: +852 1234 5678</i><br>
-                      <i class="fa fa-fax fa-lg">
+                      <i class="fa fa-fax ">
                       Fax: +852 8765 4321</i><br>
-                      <i class="fa fa-envelope fa-lg">
+                      <i class="fa fa-envelope">
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</i></a>
 		           </address>
                 </div>
