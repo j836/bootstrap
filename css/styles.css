@@ -67,4 +67,11 @@ This shall not work until bg-primary is not removed in ul class
 
 
 }
-
+a {
+    text-decoration: none;
+    color:inherit;
+}
+a:hover {
+    text-decoration: none;
+    color:initial;
+}
