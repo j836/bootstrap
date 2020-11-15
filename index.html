@@ -106,7 +106,7 @@
                 </div>
                 <!-- Task 3 -->
                 <div class="col-8 col-sm-3 align-self-center" id="reservebuttondiv">
-                    <a href="#reservetable" role="button" class="btn btn-warning" style="width:100%;">Reserve Table</a>
+                    <a href="#reservetable" role="button" class="btn btn-warning" style="width:100%;" data-toggle="tooltip" data-html="true" title="Or call us at 9657262180" data-placement="bottom">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -314,7 +314,12 @@
     BootStrap by defualt uses helvetica font.Though we can change that.
     
     -->
-
+    <script src="text/javascript">
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    
+    </script>
 </body>
 
 </html>
