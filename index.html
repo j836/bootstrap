@@ -208,10 +208,10 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                     <div class="btn-group" id="carouselButtons">
-                        <button class="btn btn-danger btn-pause" id="carousel-pause">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause" type="button">
                             <span class="fa fa-pause"></span>
-                        </button>
-                        <button class="btn btn-danger" id="carousel-play">
+                        </button>&nbsp;&nbsp;
+                        <button class="btn btn-danger btn-sm" id="carousel-play" type="button">
                             <span class="fa fa-play"></span>
                         </button>
                     </div>
@@ -439,6 +439,20 @@
     BootStrap by defualt uses helvetica font.Though we can change that.
     
     -->
+    <script>
+        $(document).ready(function() {
+            $("#mycarousel").carousel({
+                interval: 2000 
+            })
+            $("#carousel-pause").click(function() {
+                $("#mycarousel").carousel("pause")
+            })
+            $("#carousel-play").click(function() {
+                $("#mycarousel").carousel("cycle")
+            })
+
+        })
+    </script>
 </body>
 
 </html>
