@@ -91,3 +91,10 @@ a:hover {
     left: 0;
     min-height : 300px;
 }
+
+/*Change the positions of play buttons*/
+#carouselButtons {
+    position: absolute;
+    bottom:0;
+    right:0;
+}
