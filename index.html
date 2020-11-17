@@ -439,7 +439,7 @@
         $(document).ready(function() 
         {
              $("#mycarousel").carousel({
-                 interval: 200
+                 interval: 2000
              })
             // $("#carousel-pause").click(function() {
             //     $("#mycarousel").carousel("pause")
@@ -450,14 +450,14 @@
             
                 $("#carousel-button").click(function() {
                     console.log("clicked");
-                    if($('#carouselButton').children('span').hasClass('fa-pause'))
+                    if($('#carouselButton').children("span").hasClass('fa-pause'))
                     {
                         alert("Fired");
                         $('#mycarousel').carousel('pause')
-                        $("#carouselButton").children('span').removeClass('fa-pause')
-                        $("#carouselButton").children('span').addClass('fa-play');
+                        $("#carouselButton").children("span").removeClass('fa-pause')
+                        $("#carouselButton").children("span").addClass('fa-play');
                     }
-                    else if($('#carouselButton').children('span').hasClass('fa-play'))
+                    else if($('#carouselButton').children("span").hasClass('fa-play'))
                     {
                         $('#mycarousel').carousel('cycle')
                         $("#carouselButton").children('span').removeClass('fa-play') 
