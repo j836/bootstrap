@@ -1,3 +1,7 @@
+/*
+Bootstrap provides its css in scss format
+*/
+
 $lt-gray:#ddd;
 $background-dark:#512DA8;
 $background-light:#9575CD;
@@ -73,5 +77,26 @@ body {
     right:0px;
     bottom:0px;
 }
+ 
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                color:white;
+                background-color: $background-dark;
+            }
+            .modal-body {
+                background-color: $background-pale;
+            }
 
+        }
+    }
+}
 
+#closeButton {
+    color:white;
+}
+
+#closeReserveTableModal {
+    color:white;
+}

@@ -1,3 +1,6 @@
+/*
+Bootstrap provides its css in scss format
+*/
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -51,3 +54,16 @@ body {
   position: absolute;
   right: 0px;
   bottom: 0px; }
+
+.modal .modal-dialog .modal-content .modal-header {
+  color: white;
+  background-color: #512DA8; }
+
+.modal .modal-dialog .modal-content .modal-body {
+  background-color: #D1C4E9; }
+
+#closeButton {
+  color: white; }
+
+#closeReserveTableModal {
+  color: white; }
