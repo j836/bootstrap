@@ -18,3 +18,46 @@ Use git push --set-upstream origin Assignment2<branchname> to push a branch to g
  "watch-all":"parallelshell \"npm run watch:scss\" \"npm run lite\" "
   Allows Running 2 scripts simultaneously
   Now after doing npm start will start the 2 scripts simultaneously.
+  
+  NPM SCRIPTS PART 2
+  Step 1 npm install --save-dev rimraf
+  It is a modue which helps clean the folder.
+  Our folders name in which we are going to put all the files comboned,together is dist(meaning distribution folder)
+  IN PACKAGE.JSON
+  "clean":"rimraf dist"
+  
+  Step 2 Copying files.
+  npm -g install copyfiles
+  helps copy files from one folder to another.
+  IN PACKAGE.JSON
+  "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
+  NOW WE COME IN COMMAND PROPMT
+  npm run copyfonts
+  A folder named dist is created witha subfolder fonts which has all the font files.
+  npm run clean
+  Deleted the dist folder
+  Step 4 Install a node modulenamed imagemin-cli which is a cli for imagemin module.
+  The imagemin module takes a set of image files and compress them as much as possible but still be rendered properly.
+  This way we reduce the data required by the browser to download.
+  ADD DIST TO GITIGNORE
+  IN PACKAGE.JSON
+  "imagemin":"imagemin img/* -o dist/img"
+  img/* => source -o=>output dist/img => destination
+  It means take all files from img folder minimize it and paste it in dist/img folder.
+  Step 5 Preparing the dist folder 
+  ON COMMAND PROPMT
+  npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
+  usemin-cli concatenates all js files to one single js file all css code to 1file and all html code to 1 file.
+  But internally it requires uglifyjs and htmlmin to work out.
+  But uglifyjs was deprecated.So I installed uglify-js which is a modifies version.
+  IN INDEX.HTML,CONTACTUS.HTML AND ABOUTUS.HTML
+  Before <link> and <script> tags we write <!-- build:css dist/main.css --> <link> tags <!-- endbuild --> <!-- build:js dist/main.js --> <script> tags <!-- endbuild --> 
+  IN PACKAGE.JSON
+  "usemin":"usemin contactus.html -d dist --htmlmin -o dist/contactus.html && aboutus.html -d dist --htmlmin -o  dist/aboutus.html && index.html -d dist --htmlmin -o dist/index.html"
+  "build":"npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+  
+So only using 1 command everything will take place on its own and that one command is
+  npm run build
+  And thats all about NPM SCRIPTS PART 2
+  
+  
